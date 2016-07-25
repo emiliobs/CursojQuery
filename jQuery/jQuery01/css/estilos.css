@@ -1,0 +1,30 @@
+﻿.deslizante
+{
+    height:120px;
+    display:none;
+}
+
+.deslizante, .mostrar, .mostrarOcultar, .ocultar
+{
+    margin:0;
+    padding:.5rem;
+    border: thin solid #ec673a;
+    text-align:center;
+    background:#eee;
+    cursor:pointer;
+}
+
+.cuadro
+{
+    height:150px;
+    width:150px;
+    background-color:darkorange;
+}
+
+#animable {
+    position:relative;
+background-color:darkorange;
+ height:150px;
+    width:150px;
+
+}
