@@ -28,3 +28,12 @@ background-color:darkorange;
     width:150px;
 
 }
+
+.span-css {
+
+display:block;
+color:black;
+font-size:3rem;
+font-weight:bold;
+background-color:#ec673a;
+}

@@ -173,6 +173,80 @@ function efector()
                       }, 5000);
     });
 
+    $('#button12').on('click', function () {
+
+        //$('#oculto').hide(2000);
+
+        //alert('El párrafo se Ha oultado.!!');
+
+        //función callback
+        $('#oculto').hide(2000, function ()
+        {
+            alert('El párrafo se ha ocultado.');
+        });
+    });
+
+    $('#boton13').on('click', function ()
+    {
+        $('#p').html('<i>El contenido ha sido cambiado.</i>');
+    });
+
+    $('#boton14').on('click', function () {
+        $('#p').prepend('<b>Contenido agregado antes </b><img src="img/emily.jpg" /> ');
+    });
+
+    $('#boton15').on('click', function () {
+        $('#p').append('</b>Contenido agregado después</b><input type="text" value="Hola" />');
+    });
+
+    $('#boton16').on('click', function () {
+        $('#p').before('<div class="antes">Contenido agregado antes del selector.</div>');
+        $('.antes').css('background-color','magenta');
+    });
+
+    $('#boton17').on('click', function () {
+        $('#p').after('<div class="despues">Contenido agregado después del selector.</div>');
+        $('.despues').css('background-color', 'cyan');
+    });
+
+    $('#boton18').on('click', function () {
+        $('p').css('font-size', '2rem').css({backgroundColor:'skyblue'});
+    });
+
+    $('#boton19').on('click', function () {
+        $('p').css({
+
+            'backgroundColor': '#eee',
+            borderRadius: '1rem',
+            border: 'thick solid #222',
+            fontsize: '3rem',
+            padding: '1rem',
+            'text-shadow':'.2rem .2rem .5rem #000'
+
+        });
+              
+    });
+
+    $('#enlace').on({
+        click: function (evento) { 
+        
+            evento.preventDefault();
+            alert('Se ha prevenido la acción por defecto del enlace');
+            
+        },
+        mouseover: function () {
+
+            //$('span').addClass('span-css');
+            $('span').toggleClass('span-css');
+
+        },
+        mouseout: function () {
+
+            //$('span').removeClass('span-css');
+            $('span').toggleClass('span-css');
+        }
+    });
+
 }
 //Manejador Semantico
 //$(document).ready(efector);
